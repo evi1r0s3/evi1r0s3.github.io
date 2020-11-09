@@ -39,6 +39,11 @@ dash:
 
   animation_speed: 50
 
+leancloud:
+  enable: true
+  app_id: Ui0efcrLLsoDvbeqsduJCE4b-MdYXbMMI
+  app_key: vEdYfdve84fJbGoIQ3s2XTxO
+
 # Build settings
 theme: jekyll-dash
 
