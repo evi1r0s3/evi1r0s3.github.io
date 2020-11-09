@@ -35,8 +35,18 @@ comments: true
 <!--  css & js -->
 <link rel="stylesheet" href="{{ "/share_js/css/share.min.css" | relative_url }}">
 <script src="{{ "/share_js/js/social-share.min.js" | relative_url }}"></script>
-
+<h2>匿名留言</h2>
+<div id="vcomments">
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'Ui0efcrLLsoDvbeqsduJCE4b-MdYXbMMI',
+            appKey: 'vEdYfdve84fJbGoIQ3s2XTxO'
+        })
+    </script>
+</div>
 {% if site.dash.disqus.shortname %}
+<h2>登陆留言</h2>
 <div class="comments">
 {% include disqus.html %}
 </div>
