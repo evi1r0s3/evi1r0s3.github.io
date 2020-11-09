@@ -1,0 +1,54 @@
+title: h3Rm4p's Blog
+author: h3Rm4p
+email: h3Rm4pz@outlook.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  {{帝力于我何有哉}}
+  不疯魔，不成活。 
+  Be obsessed, or be average.
+show_excerpts: false # set to true to show excerpts on the homepage
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
+
+  disqus:
+    shortname: h3Rm4p-github
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://twitter.com/h3Rm4p
+      icon: twitter-square
+      color: cyan
+    #- url: https://bitbrain.itch.io
+    #  icon: itch-io
+    #  color: red
+    - url: https://github.com/h3Rm4p
+      icon: github-square
+      color: purple
+
+  show_author: true
+
+  animation_speed: 50
+
+# Build settings
+theme: jekyll-dash
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll/tagging
+
+# Replaces the default avatar provider (gravatar)
+avatar_source: github
+github_username: h3Rm4p
