@@ -38,6 +38,7 @@ comments: true
   </span>
 </div>
 {% endif %}
+<HR align=center width=100% color=#637AFE>
 
 <div class="social-share"></div>
 
@@ -45,22 +46,24 @@ comments: true
 <link rel="stylesheet" href="{{ "/share_js/css/share.min.css" | relative_url }}">
 <script src="{{ "/share_js/js/social-share.min.js" | relative_url }}"></script>
 
-<div class="accordion" id="accordionExample">
 
-  <!--  card1 -->
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <h5>匿名留言</h5>
-        </button>
-      </h2>
-    </div>
+  <HR align=center width=100% color=#637AFE>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
+  <nav class="navbar navbar-dark" style="background-color: #F24784;">
+    <a class="navbar-brand" href="#">comments_留言 ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Anonymous_comments 匿名留言
+            </a>
+            <div class="dropdown-menu">
 
-        <!--  Valine -->
+               <!--  Valine -->
         <div id="vcomments">
           <script>
               new Valine({
@@ -72,37 +75,31 @@ comments: true
         </div>
         <!--  end -->
 
-      </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login_comments 登陆留言
+            </a>
+            <div class="dropdown-menu">
+              {% if site.dash.disqus.shortname %}
+              <div class="comments">
+              {% include disqus.html %}
+              </div>
+              {% endif %}
+              
+
+            </div>
+          </li>
+
+      </ul>
+      
     </div>
-  </div>
+</nav>
 
-  <!--  card2 -->
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <h5>登陆留言</h5>
-        </button>
-      </h2>
-    </div>
-
-
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-
-        {% if site.dash.disqus.shortname %}
-        <div class="comments">
-        {% include disqus.html %}
-        </div>
-        {% endif %}
-        
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
+<HR align=center width=100% color=#637AFE>
+ 
 
 {% assign size = site.related_posts | size %}
         {% if size != 0 %}
