@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lazysysadmin"
+title:  "vulnhub >_ Lazysysadmin"
 description: walkthrough
 category: vulnhub
 ---

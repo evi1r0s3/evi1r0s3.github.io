@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lord of the root"
+title:  "vulnhub >_ Lord of the root"
 description: walkthrough
 category: vulnhub
 ---

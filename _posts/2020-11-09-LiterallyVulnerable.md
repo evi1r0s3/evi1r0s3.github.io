@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LiterallyVulnerable"
+title:  "vulnhub >_ LiterallyVulnerable"
 description: walkthrough
 category: vulnhub
 ---

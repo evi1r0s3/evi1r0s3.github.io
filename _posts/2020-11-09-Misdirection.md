@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Misdirection"
+title:  "vulnhub >_ Misdirection"
 description: walkthrough
 category: vulnhub
 ---

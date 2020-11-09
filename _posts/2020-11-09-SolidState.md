@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SolidState"
+title:  "vulnhub >_ SolidState"
 description: walkthrough
 category: vulnhub
 ---

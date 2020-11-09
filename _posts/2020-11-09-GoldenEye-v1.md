@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GoldenEye-v1"
+title:  "vulnhub >_ GoldenEye-v1"
 description: walkthrough
 category: vulnhub
 ---

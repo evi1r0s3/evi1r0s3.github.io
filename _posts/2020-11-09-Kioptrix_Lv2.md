@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kioptrix_Lv2"
+title:  "vulnhub >_ Kioptrix_Lv2"
 description: walkthrough
 category: vulnhub
 ---

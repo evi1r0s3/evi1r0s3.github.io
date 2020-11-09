@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prime_Series_Level-1"
+title:  "vulnhub >_ Prime_Series_Level-1"
 description: walkthrough
 category: vulnhub
 ---

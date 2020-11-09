@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "WebDeveloper"
+title:  "vulnhub >_ WebDeveloper"
 description: walkthrough
 category: vulnhub
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rickdiculously_Easy"
+title:  "vulnhub >_ Rickdiculously_Easy"
 description: walkthrough
 category: vulnhub
 ---

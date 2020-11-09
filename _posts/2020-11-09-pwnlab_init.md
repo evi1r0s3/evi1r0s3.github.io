@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "pwnlab_init"
+title:  "vulnhub >_ pwnlab_init"
 description: walkthrough
 category: vulnhub
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Escalate_Linux"
+title:  "vulnhub >_ Escalate_Linux"
 description: walkthrough
 category: vulnhub
 ---

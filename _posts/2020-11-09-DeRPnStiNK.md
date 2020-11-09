@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DeRPnStiNK"
+title:  "vulnhub >_ DeRPnStiNK"
 description: walkthrough
 category: vulnhub
 ---

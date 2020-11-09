@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pinkys-Palace-Hard"
+title:  "vulnhub >_ Pinkys-Palace-Hard"
 description: walkthrough
 category: vulnhub
 ---
