@@ -1,6 +1,6 @@
-title: h3Rm4p's Blog
-author: h3Rm4p
-email: h3Rm4pz@outlook.com
+title: Never give up
+author: evi1_r0s3_a0f4r
+email: evi1_r0s3_a0f4r@outlook.com
 description: > # this means to ignore newlines until "show_exerpts:"
   {{帝力于我何有哉}}
   不疯魔，不成活。 
@@ -25,13 +25,13 @@ dash:
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
-    - url: https://twitter.com/h3Rm4p
+    - url: https://twitter.com/evi1r0s3
       icon: twitter-square
       color: cyan
     #- url: https://bitbrain.itch.io
     #  icon: itch-io
     #  color: red
-    - url: https://github.com/h3Rm4p
+    - url: https://github.com/evi1r0s3
       icon: github-square
       color: purple
 
@@ -56,4 +56,4 @@ plugins:
 
 # Replaces the default avatar provider (gravatar)
 avatar_source: github
-github_username: h3Rm4p
+github_username: evi1r0s3
