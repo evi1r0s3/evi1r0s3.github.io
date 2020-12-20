@@ -25,7 +25,7 @@ dash:
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
-    - url: https://twitter.com/evi1r0s3
+    - url: https://twitter.com/evi1_f4iry
       icon: twitter-square
       color: cyan
     #- url: https://bitbrain.itch.io
