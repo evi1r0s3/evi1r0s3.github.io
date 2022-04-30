@@ -1,0 +1,59 @@
+title: Never give up
+author: evi1_r0s3_a0f4r
+email: evi1_r0s3_a0f4r@outlook.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  {{帝力于我何有哉}}
+  不疯魔，不成活。 
+  Be obsessed, or be average.
+show_excerpts: false # set to true to show excerpts on the homepage
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
+
+  disqus:
+    shortname: h3rm4p-github
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://twitter.com/evi1_f4iry
+      icon: twitter-square
+      color: cyan
+    #- url: https://bitbrain.itch.io
+    #  icon: itch-io
+    #  color: red
+    - url: https://github.com/evi1r0s3
+      icon: github-square
+      color: purple
+
+  show_author: true
+
+  animation_speed: 50
+
+leancloud:
+  enable: true
+  app_id: Ui0efcrLLsoDvbeqsduJCE4b-MdYXbMMI
+  app_key: vEdYfdve84fJbGoIQ3s2XTxO
+
+# Build settings
+theme: jekyll-dash
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll/tagging
+
+# Replaces the default avatar provider (gravatar)
+avatar_source: github
+github_username: evi1r0s3

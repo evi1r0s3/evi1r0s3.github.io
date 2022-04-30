@@ -1,0 +1,135 @@
+---
+layout: default
+comments: true
+---
+{% unless site.dash.show_author == false %}
+  {% include author.html %}
+{% endunless %}
+
+<HR align=center width=100% color=#637AFE>
+  <div>
+    {% include categories.html %}
+  </div>
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  {% if site.plugins contains "jekyll/tagging" %}
+  <div class="post-tags">
+      {% for tag in page.tags %}
+      <a class="tag" href="/tag/{{ tag }}/">{{ tag }}</a>
+      {% endfor %}
+  </div>
+  {% endif %}
+  <div class="post-date">Published on {{ page.date | date_to_string }}</div>
+  {% if page.description != null %}
+  <noscript>
+    <div class="post-description">{{ page.description }}</div>
+  </noscript>
+  <div id="animated-post-description" class="post-description" style="display: none;"></div>
+  {% endif %}
+  {{ content }}
+</div>
+
+
+<HR align=center width=100% color=#637AFE>
+
+<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="{{ "/share_js/css/share.min.css" | relative_url }}">
+<script src="{{ "/share_js/js/social-share.min.js" | relative_url }}"></script>
+
+
+  <HR align=center width=100% color=#637AFE>
+
+  <nav class="navbar navbar-dark" style="background-color: #F24784;">
+    <a class="navbar-brand" >comments_留言 ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Anonymous_comments 匿名留言
+            </a>
+            <div class="dropdown-menu">
+
+              <!--  Valine  mr-auto mt-2 mt-lg-0-->
+	      <div align=center width=90%>
+        <div id="vcomments">
+          <script>
+              new Valine({
+                  el: '#vcomments',
+                  appId: '{{site.leancloud.app_id}}',
+                  appKey: '{{site.leancloud.app_key}}'
+              })
+          </script>
+        </div>
+        <!--  end -->
+	</div>
+
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login_comments 登陆留言
+            </a>
+            <div class="dropdown-menu">
+              {% if site.dash.disqus.shortname %}
+              <div class="comments" align=center width=90%>
+              {% include disqus.html %}
+              </div>
+              {% endif %}
+              
+
+            </div>
+          </li>
+
+      </ul>
+      
+    </div>
+</nav>
+
+<HR align=center width=100% color=#637AFE>
+ 
+
+{% assign size = site.related_posts | size %}
+        {% if size != 0 %}
+        <div class="related">
+          <h2>related posts</h2>
+          <ul class="related-posts">
+            {% for post in site.related_posts limit:3 %}
+              <li>
+                <h3>
+                  <a href="{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+                </h3>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}      
+
+{% include tagcloud.html %}
+
+{% assign animation_speed = site.dash.animation_speed | default: 50 %}
+<script>
+  let i = 0;
+  const text = '{{ page.description }}';
+  const speed = parseInt('{{ animation_speed }}');
+  
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById('animated-post-description').innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  document.getElementById('animated-post-description').style.display = 'initial';
+  typeWriter();
+</script>
